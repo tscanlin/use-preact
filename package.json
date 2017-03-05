@@ -1,0 +1,28 @@
+{
+  "name": "use-preact",
+  "version": "1.0.0",
+  "description": "Use preact to reduce bundle sizes, this script will add preact-compat as an alias",
+  "main": "use-preact.sh",
+  "bin": {
+    "use-preact": "use-preact.sh"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tscanlin/use-preact.git"
+  },
+  "keywords": [
+    "react",
+    "preact",
+    "use",
+    "use-preact"
+  ],
+  "author": "Tim Scanlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tscanlin/use-preact/issues"
+  },
+  "homepage": "https://github.com/tscanlin/use-preact#readme"
+}
