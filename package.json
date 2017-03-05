@@ -1,6 +1,6 @@
 {
   "name": "use-preact",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use preact to reduce bundle sizes, this script will add preact-compat as an alias",
   "main": "use-preact.sh",
   "bin": {
