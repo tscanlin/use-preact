@@ -8,7 +8,11 @@ filePattern=${1:-./node_modules/react-scripts/config/}
 searchString=${2:-preact-compat}
 
 replaceString="alias: {"
-newString="alias: {\n\t\t\t\'react\': \'preact-compat\',\n\t\t\t\'react-dom\': \'preact-compat\',"
+newString="\
+  alias: {\
+    'react\': \'preact-compat\',\
+    'react-dom\': \'preact-compat\',\
+"
 
 SEARCH="$(grep -rl "$searchString" $filePattern)"
 echo "${SEARCH}"
@@ -17,6 +21,6 @@ if [ ! "${SEARCH}" ]
   then
     echo "preact was not detected, adding it as a webpack config alias..."
 
-    REPLACE="$(find $filePattern -type f -exec sed -i "s/$replaceString/$newString/gi" {} \;)"
+    REPLACE="$(find $filePattern -type f -exec sed -i "" -e "s/$replaceString/$newString/g" {} \;)"
     echo "${REPLACE}"
 fi
