@@ -17,5 +17,3 @@ By default use-preact points to the location of the webpack config for create-re
 # Default values
 ./node_modules/use-preact/use-preact.sh ./node_modules/react-scripts/config/ preact-compat
 ```
-
-If you are using preact, you can pass in the `--preact flag`
